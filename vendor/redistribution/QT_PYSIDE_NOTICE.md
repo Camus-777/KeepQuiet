@@ -1,0 +1,27 @@
+# Qt / PySide6 / Shiboken6 开源分发说明
+
+KeepQuiet 使用 Qt 6.12.0 的 Core、Gui、Widgets 和相应 Windows／图像／样式插件，以及 PySide6 Essentials、Shiboken6 6.12.0。对这些提供 LGPL 选项的组件，本分发选择 GNU LGPL v3（LGPL-3.0-only）；其中第三方代码保留各自许可。Copyright (C) The Qt Company Ltd. and other contributors。
+
+KeepQuiet 原创代码采用 MIT，见随附 LICENSE；MIT 不重新授权 Qt 或其他第三方组件。Qt/PySide 的商业许可文本作为上游文件保留，本包没有选择商业许可作为这些组件的授权依据。
+
+## 对应源码
+
+同一 GitHub Release 应同时提供 **KeepQuiet-Qt-PySide-6.12.0-source.zip**，与成品 ZIP 在同一下载位置免费提供。它包含官方 Qt Base 6.12.0 和 Qt for Python 6.12.0 完整原始源码包，附来源、SHA256 和构建／替换说明。发布者须在成品可下载期间保留此源码附件及清楚的下载指引；不要只发布二进制附件。
+
+发布使用源码随网络下载提供的方式，不以一个没有联系人或履行安排的书面承诺替代源码。上游直接下载及校验值同时保存在 qt-pyside-manifest.json，作为可追溯来源与额外获取渠道。
+
+## 许可文本与权利
+
+原始 GNU LGPL v3、GNU GPL v3 及完整上游许可保存在 vendor/licenses/Qt/upstream/LICENSES 和 vendor/licenses/QtForPython/upstream/LICENSES。便携成品中对应目录为 KeepQuiet/_internal/vendor/licenses/。安装后仍保留在应用的 _internal/vendor/licenses/ 内。
+
+用户可按相关许可研究、修改和重新分发这些库，并为调试这些库的修改而进行所需的逆向工程。可以替换应用外置的 Qt/PySide/Shiboken 动态库；本项目不对这些库实施运行时哈希锁定、签名锁定、安装密钥或禁止替换的附加条款。替换需要保持 Windows x64、Python 扩展 ABI、Qt/PySide 版本与构建配置兼容，详见 REBUILD_AND_REPLACE.md。
+
+原始源码、许可和第三方声明完整保留；实际保留的 14 个 Qt/PySide/Shiboken 二进制文件已逐字节匹配官方 PyPI wheel，未修改。去除了未使用模块／插件，但没有修改保留库。Microsoft Visual C++ runtime 文件是单独的运行环境组件，不因相邻 Qt 库的许可而改用 LGPL。
+
+## 官方资料
+
+- Qt LGPL 分发要求：https://www.qt.io/development/open-source-lgpl-obligations
+- Qt for Python 许可：https://doc.qt.io/qtforpython-6/licenses.html
+- LGPL v3 原文：https://www.gnu.org/licenses/lgpl-3.0.html
+
+以上说明随当前经过核对的版本分发；更新或修改第三方库后，需要相应更新来源、源码和声明。

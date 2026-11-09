@@ -1,0 +1,12 @@
+VB-CABLE is an independent VB-Audio Software / Vincent Burel product.
+Origin: https://www.vb-cable.com/ and https://vb-audio.com/Cable/
+VB-CABLE is Donationware. All participations are welcome.
+Support / license: https://shop.vb-audio.com/en/win-apps/11-vb-cable.html
+Distribution terms: https://vb-audio.com/Services/licensing.htm
+
+The original base VBCABLE_Driver_Pack45.zip is preserved AS IS.
+A+B and C+D are not included. The original readme/license remain inside the ZIP.
+The vendor distribution conditions require visible product identity, origin,
+and an opportunity for users to support VB-Audio; professional deployments
+have additional conditions. Consult the current vendor terms before release.
+Terms reviewed: 2026-11-09. This notice does not grant a license to KeepQuiet.

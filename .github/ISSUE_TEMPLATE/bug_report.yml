@@ -1,0 +1,27 @@
+name: Bug report
+description: 报告可复现的问题
+body:
+  - type: markdown
+    attributes:
+      value: 请提供脱敏信息，避免上传真实声纹、私人录音、settings.json 或完整设备标识。
+  - type: input
+    id: version
+    attributes:
+      label: 应用版本与模式
+      placeholder: 0.2.2 battle-fix5 / 均衡或战斗模式
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤、预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Windows、CPU、音频接口及相关负载
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 脱敏日志或截图

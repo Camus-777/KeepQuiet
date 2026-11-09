@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.ps1 text eol=crlf
+*.alk binary
+*.png binary
+*.ico binary
+*.wav binary
+*.zip binary

@@ -1,0 +1,7 @@
+These PCM WAV files are upstream Alkove test fixtures:
+https://github.com/alkove-ai/alkove/tree/main/packages/alkove/test/fixtures
+Retrieved 2026-11-06 for local integration verification.
+Upstream source/weights: Apache-2.0; notices in models/ALKOVE-NOTICE.txt.
+They are test data, not a user's saved voice profile.
+Do not ship them as an enrolled default identity. Test fixtures are excluded
+from the application bundle. A user must explicitly enroll their own voice.
