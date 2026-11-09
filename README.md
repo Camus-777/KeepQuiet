@@ -16,11 +16,6 @@
   <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="Original code: MIT" />
 </p>
 
-<p align="center">
-  <img src="docs/images/main-dark.png" alt="KeepQuiet 深色界面" width="48%" />
-  <img src="docs/images/main-light.png" alt="KeepQuiet 浅色界面" width="48%" />
-</p>
-
 ---
 
 ## 💡 设计初衷
