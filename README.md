@@ -113,13 +113,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Build.ps1 -OutputDir
 
 ## 📦 发布附件
 
-发布者应在同一个 GitHub Release 提供：
+发布者将在同一个 GitHub Release 提供：
 
 | 文件 | 用途 |
 | --- | --- |
 | `KeepQuiet-0.2.2-win-x64.zip` | 用户下载运行的 Windows 成品 |
 | `KeepQuiet-Qt-PySide-6.12.0-source.zip` | 当前成品所用 Qt/PySide 对应源码、原始许可及构建／替换说明 |
-| `SHA256SUMS.txt` | 建议提供，用于验证下载文件的完整性 |
 
 **在分发对应成品期间，保持 Qt/PySide 源码附件与获取指引可用。** 普通用户运行程序只需下载成品 ZIP，无需同时下载源码附件。
 
