@@ -33,7 +33,6 @@ KeepQuiet 使用录入的个人声纹作为目标说话人提取的条件，尝�
 
 ## ✨ 核心特性
 
-- **仅保留 WASAPI 设备接口**：移除 MME 与 DirectSound 重复入口，减少同一设备的多种别名。
 - **Alkove Focus 目标声线提取**：集成 Alkove 0.4.0。普通运行使用 Focus；声线录入时使用 Cue 检测有效语音片段，使用 Timbre 提取声纹并检查前后声线一致性。
 - **本地音频处理与声纹加密**：音频处理在本地 CPU 执行。声纹通过 Windows DPAPI 绑定当前系统用户加密保存，默认数据目录为 `%LOCALAPPDATA%\KeepQuiet\`。依赖安装、模型获取和驱动版本检查可能需要网络。
 - **开始运行时测速，切换模式复用线路**：每次点击“开始运行”都先测速并复验，再开启输出。运行中切换档位、滤波或战斗模式时，沿用本次线路重新初始化处理链，不重复测速；保留静音、已启用的耳返及普通模式参数。停止运行后可手动重新测速。
@@ -75,8 +74,6 @@ Qt 界面与音频任务运行在独立进程中，IPC 传递控制命令、状�
 
 线路方向为：**物理麦克风 → KeepQuiet → CABLE Input → VB-CABLE → CABLE Output → 聊天或游戏软件**。
 
-可选安装：退出正在运行的 KeepQuiet 后，运行解压目录中的 `Install-KeepQuiet.ps1`，会将程序复制到 `%LOCALAPPDATA%\Programs\KeepQuiet` 并创建开始菜单快捷方式。便携运行无需执行此脚本。
-
 VB-CABLE 是 **VB-Audio / Vincent Burel** 的独立 Donationware 产品，欢迎支持其开发：[官方网站](https://www.vb-cable.com/) · [许可与支持](https://vb-audio.com/Services/licensing.htm) · [支持／购买许可](https://shop.vb-audio.com/en/win-apps/11-vb-cable.html)。本项目保留原始基础驱动包，不包含 A+B、C+D。
 
 ## 🛠️ 开发者：从源码运行与构建
@@ -84,7 +81,7 @@ VB-CABLE 是 **VB-Audio / Vincent Burel** 的独立 Donationware 产品，欢迎
 ### 环境
 
 - Windows x64；当前本地验证环境为 Windows 11。
-- 已验证 Python **3.12**。项目元数据声明 `>=3.12,<3.14`，Python 3.13 尚未单独验证。
+- 已验证 Python **3.12**。
 - 使用 Windows PowerShell 5.1 或兼容的 PowerShell 环境。
 
 ### 配置并启动
